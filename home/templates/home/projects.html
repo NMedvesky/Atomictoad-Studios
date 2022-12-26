@@ -1,0 +1,23 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block meta %}
+	<meta property="og:description" content="Projects">
+	<meta property="og:image" content="{% static 'home/img/Atomictoad.png' %}">
+{% endblock meta %}
+{% block content %}
+	<h1>Random Projects made by Niko</h1>
+	<div class="col g-3" style="position: relative; padding-top: 2rem">
+		<div class="tower-div" style="margin-left: -45%;">
+		    <a class="card card-text tower-card" href="{% url 'home-kingdompage' %}">
+				<img class="tower-img" src="{% static 'home/img/kingdom2.png' %}">
+			            Cure The Kingdom Tech Demo
+			    </a>
+		</div>
+		    <div class="tower-div" style="margin-left: 3%;">
+		        <a class="card card-text tower-card" href="{% url 'home-blenderrenderpage' %}">
+					<img class="tower-img" src="{% static 'home/blenderrender/space-blackhole-cyan-purple.png' %}">
+						Blender Renders
+			    </a>
+		</div>
+	</div>
+{% endblock content %}

@@ -1,0 +1,24 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block meta %}
+	<meta property="og:description" content="The Home of Atomictoad Studios">
+	<meta property="og:image" content="{% static 'home/img/Atomictoad.png' %}">
+{% endblock meta %}
+{% block content %}
+	<h1>Welcome To Atomictoad Studios</h1>
+	<h3>Created by Niko</h3>
+	<div class="col g-3" style="position: relative; padding-top: 2rem;">
+		<div class="tower-div" style="margin-left: -45%;">
+		    <a class="card card-text tower-card" href="{% url 'home-projectspage' %}">
+				<img class="tower-img" src="{% static 'home/blenderrender/space-blackhole-cyan-purple.png' %}">
+			            Projects
+			    </a>
+		</div>
+		    <div class="tower-div" style="margin-left: 3%;">
+		        <a class="card card-text tower-card" href="{% url 'home-codingpage' %}">
+					<img class="tower-img" src="{% static 'home/img/coding.png' %}">
+						Coding Basics
+			    </a>
+		</div>
+	</div>
+{% endblock content %}

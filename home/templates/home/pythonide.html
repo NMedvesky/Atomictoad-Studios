@@ -1,0 +1,15 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block meta %}
+	<meta property="og:description" content="Python Interpreter">
+	<meta property="og:image" content="{% static 'home/img/Atomictoad.png' %}">
+
+	<link rel="stylesheet" href="{% static 'home/agate.css' %}">
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+  	<script>hljs.initHighlightingOnLoad();</script>
+{% endblock meta %}
+{% block content %}
+	<h1>Python Interpreter</h1>
+	<iframe src="https://trinket.io/embed/python/002f1e4129?runOption=run&start=result&showInstructions=true" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+	
+{% endblock content %}

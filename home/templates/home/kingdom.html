@@ -1,0 +1,22 @@
+
+{% load static %}
+
+<meta property="og:description" content="Cure The Kingdom Tech Demo">
+<meta property="og:image" content="{% static 'home/img/Atomictoad.png' %}">
+
+<style>
+	body {
+		background-color: black;
+		margin: 0;
+		image-rendering: pixelated;
+	}
+</style>
+
+<canvas style="background-color: white;"></canvas>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="{% static 'kingdomfiles/swiped-events.js' %}"></script>
+<script src="{% static 'kingdomfiles/audio.js' %}"></script>
+<script src="{% static 'kingdomfiles/classes.js' %}"></script>
+<script src="{% static 'kingdomfiles/index.js' %}"></script>

@@ -1,0 +1,41 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block meta %}
+	<meta property="og:description" content="Python Coding Guide">
+	<meta property="og:image" content="{% static 'home/img/Atomictoad.png' %}">
+
+	<link rel="stylesheet" href="{% static 'home/agate.css' %}">
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+  	<script>hljs.initHighlightingOnLoad();</script>
+{% endblock meta %}
+{% block content %}
+	<h1>Python Coding Guide by Niko</h1>
+	<div style="text-align: left; padding-top: 2rem;">
+		<p style="padding-left: 2rem; white-space: pre-wrap;">
+		Fun fact, this entire website was made with Python, Html, and Javascript
+		If you ever need help with something you could contact me via my email nikomedvesky@gmail.com or my discord Nikoijp#6398. And if im not avaliable to help you can always google it and check coding websites such as stackoverflow.
+		Anyways thats all for the fun fact. Remember to have fun coding.</p>
+		<h3>Get Started With Python</h3>
+		<div style="padding-left: 2rem">
+			<p>To use Python download a Python Interpreter from <a href="https://python.org">https://python.org</a> or use an online Python Interpreter here <a href="{% url 'home-pythonpage' %}">Python Interpreter.</a></p>
+			<p>In this Python guide the output of each code snippit is shown with a ">" before each output line.</p>
+		</div>
+		{% for codepart in codeinfo %}
+		<h3>{{ codepart.name }}</h3>
+		<div style="padding-left: 2rem">
+			<p style="white-space: pre-wrap;">{{ codepart.des }}</p>
+			<pre class="row">
+				<code class="python column3">{{ codepart.examples.0 }}</code>
+				<div class="pad3"></div>
+				<code class="python column3">{{ codepart.examples.1 }}</code>
+				<div class="pad3"></div>
+				<code class="python column3">{{ codepart.examples.2 }}</code>
+			</pre>
+		</div>
+		{% endfor %}
+		<p style="padding-left: 2rem; white-space: pre-wrap;">
+		Fun fact 2, the font I used for this website is Ubuntu-R which is part of the Ubuntu Font family which is used on the Linux OS Ubuntu.
+		</p>
+	</div>
+	
+{% endblock content %}
