@@ -177,6 +177,25 @@ while running:
 > True
 > True
 ...
+	""",
+	"""
+loopon = True
+while loopon:
+	print("Loop Is On")
+	break
+
+> Loop Is On
+	""",
+	"""
+startloop = True
+while startloop:
+	print("Loop Started")
+	startloop = False
+
+print("Loop Ended")
+
+> Loop Started
+> Loop Ended
 	"""
 	]
 }
