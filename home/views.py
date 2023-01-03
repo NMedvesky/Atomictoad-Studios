@@ -10,7 +10,8 @@ codeinfo = [
 	""",
 	"""
 # A comment is started with the hashtag symbol.
-# And anything after it will be a comment.
+# And anything after it on the same line will be a comment.
+
 	""",
 	'''
 """
@@ -25,7 +26,7 @@ like how this comment is made.
 	"name": "Variables",
 	"des": """Variables are containers used to store data. Variables are also just called vars for short. The main variables that you are gonna be using are listed below.
 		str (string/text) e.x. "hello", "hi there", 'also with single quotes'
-		int (intergers/whole numbers) e.x. 4, 7, 10
+		int (integers/whole numbers) e.x. 4, 7, 10
 		float (floating-point/decimal) e.x. 1.25, 5.6, 0.02
 		bool (boolean/true or false) e.x. True, False
 		list (list of other varibles in one varible) e.x. [5, 10, 15], ["one", "two", "three"]
@@ -36,7 +37,7 @@ To define a variable use the equal sign "=" with the name of the variable to the
 greetingtext = "Hello There" # String Var
 	""",
 	"""
-wholenumber = 512 # Interger Var
+wholenumber = 512 # Integer Var
 	""",
 	"""
 learnpython = True # Boolean Var

@@ -31,6 +31,12 @@ pre code {
   display: block;
   padding: 0px;
   border-radius: 15px;
+  overflow: auto;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #696969;
+  border-radius: 15px; 
 }
 
 @font-face
