@@ -1,7 +1,7 @@
 # Atomictoad-Studios
 Created By Nicholas Medvesky
 
-This is a website created to show off projects and stuff.
+This is a website created to show off projects and stuff. It was pretty fun to make.
 
 It took a while to code all the Python, Html, and Javascript.
 
